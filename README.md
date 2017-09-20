@@ -1,1 +1,1 @@
-# try_autovalue
+# Explorations with Google AutoValue
