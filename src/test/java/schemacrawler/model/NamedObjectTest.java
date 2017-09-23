@@ -5,16 +5,17 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import schemacrawler.schema.NamedObject;
-
 public class NamedObjectTest
 {
 
   @Test
   public void testNamedObject()
   {
-    NamedObject dog = AbstractNamedObject.builder().setName("dog").build();
+    AbstractNamedObjectWithAttributes dog = AbstractNamedObjectWithAttributes
+      .builder().setName("dog").setRemarks("Good dog").build();
+
     assertEquals("dog", dog.getName());
+    assertEquals("Good dog", dog.getRemarks());
   }
 
 }
